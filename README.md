@@ -5,14 +5,15 @@
 #   -- multi pane, jump between panes, dark mode
 #
 #
-# .zshrc
+# zshrc
+#   -- git aliases
 #   -- ??
 #
-# .vimrc
+# vimrc
 #   -- dark mode
-#   -- relative lines
-#   -- syntax python
+#   -- relative lines [done]
+#   -- syntax python  [syntax on]
 #   -- auto completion for pyhon
-#   -- syntax java
+#   -- syntax java    [syntax on]
 #   -- auto completion for java
 #
