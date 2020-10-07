@@ -10,5 +10,5 @@ precmd() { vcs_info }
 zstyle ':vcs_info:git:*' formats '(%b)'
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
-PROMPT='%n in ${PWD/#$HOME/~} ${vcs_info_msg_0_} > '
+PROMPT='%n@${PWD/#$HOME/~} ${vcs_info_msg_0_} > '
 ################# show git branch name in prompt ##################
