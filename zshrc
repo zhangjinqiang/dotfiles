@@ -1,6 +1,8 @@
 export TERM=xterm-256color
 
 alias gk="git log --graph --abbrev-commit --pretty=oneline --decorate -5"
+alias gb="git branch"
+alias gbr="git branch -r"
 
 ################# show git branch name in prompt ##################
 # Load version control information
