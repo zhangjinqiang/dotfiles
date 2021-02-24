@@ -20,7 +20,7 @@ set termguicolors
 set scrolloff=8
 set noshowmode
 set signcolumn=yes
-set colorcolumn=80 
+set colorcolumn=80
 
 " Give more space for displaying messages
 set cmdheight=2
@@ -28,6 +28,7 @@ set cmdheight=2
 call plug#begin('~/.vim/plugged')
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'gruvbox-community/gruvbox'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " command! -nargs=0 ng NERDTree
