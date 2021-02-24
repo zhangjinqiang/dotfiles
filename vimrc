@@ -10,6 +10,7 @@ set cursorline
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
+set autoindent
 set smartindent
 set noswapfile
 set nobackup
@@ -34,17 +35,3 @@ call plug#end()
 " command! -nargs=0 ng NERDTree
 colorscheme gruvbox
 highlight Normal guibg=none
-
-let mapleader = " "
-" some mappings here
-
-fun! TrimWhitespace()
-    let l:save = winsaveview()
-    keeppatterns %s/\s\+$//e
-    call winrestview(l:save)
-endfun
-
-augroup JQZHANG
-    autocmd!
-    autocmd BufWritePre * :call TrimWhitespace()
-augroup END
