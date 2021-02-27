@@ -5,6 +5,7 @@ git config --global alias.br branch
 git config --global alias.rbr 'branch -r'
 git config --global alias.cm commit
 git config --global alias.co checkout
+git config --global alias.df diff
 git config --global alias.last 'log -1 HEAD'
 git config --global alias.pl 'log --graph --abbrev-commit --pretty=oneline --decorate -5'
 git config --global alias.st status
