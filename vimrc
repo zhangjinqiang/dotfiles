@@ -2,6 +2,7 @@ syntax on
 
 set guicursor=
 set nowrap
+set nohlsearch
 set noerrorbells
 set nu
 set relativenumber
@@ -21,8 +22,6 @@ set scrolloff=8
 set noshowmode
 set signcolumn=yes
 set colorcolumn=80
-set hlsearch
-
 
 " Give more space for displaying messages
 set cmdheight=2
@@ -69,8 +68,6 @@ call plug#end()
 colorscheme gruvbox
 highlight Normal guibg=none
 
-noremap <F4> :set hlsearch! hlsearch?<CR>
-nnoremap <CR> :nohlsearch<CR><CR>
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 function! <SID>StripTrailingWhitespaces()
     " Preparation: save last search, and cursor position.
