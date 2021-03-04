@@ -62,6 +62,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'gruvbox-community/gruvbox'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-abolish'
 call plug#end()
 
 " command! -nargs=0 ng NERDTree
