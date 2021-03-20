@@ -59,6 +59,7 @@ Plug 'gruvbox-community/gruvbox'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-abolish'
 Plug 'ycm-core/YouCompleteMe'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 " command! -nargs=0 ng NERDTree
