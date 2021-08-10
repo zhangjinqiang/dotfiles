@@ -22,6 +22,7 @@ set scrolloff=8
 set noshowmode
 set signcolumn=yes
 set colorcolumn=80
+set pastetoggle=<F3>
 
 " Give more space for displaying messages
 set cmdheight=2
