@@ -2,7 +2,7 @@ syntax on
 
 set guicursor=
 set nowrap
-set nohlsearch
+set hlsearch
 set noerrorbells
 set nu
 set relativenumber
