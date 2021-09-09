@@ -55,12 +55,14 @@ nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
 call plug#begin('~/.vim/plugged')
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'gruvbox-community/gruvbox'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-abolish'
-" Plug 'ycm-core/YouCompleteMe'
-Plug 'ctrlpvim/ctrlp.vim'
+    "Plug 'nvim-telescope/telescope.nvim'
+    Plug 'gruvbox-community/gruvbox'
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-abolish'
+    "Plug 'ycm-core/YouCompleteMe'
+    Plug 'ctrlpvim/ctrlp.vim'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " command! -nargs=0 ng NERDTree
