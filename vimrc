@@ -7,7 +7,7 @@ set noerrorbells
 set nu
 set relativenumber
 set cursorline
-set tabstop=4 softtabstop=4
+set tabstop=2 softtabstop=2
 set shiftwidth=4
 set expandtab
 set autoindent
@@ -63,10 +63,16 @@ call plug#begin('~/.vim/plugged')
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+    Plug 'nelstrom/vim-visual-star-search'
 call plug#end()
 
 " command! -nargs=0 ng NERDTree
 colorscheme gruvbox
+
+" From learn vimscript the hard way
+nnoremap <space> za
+autocmd VimEnter * echo "<^.^>"
+" Above is from learn vimscript the hard way
 
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 function! <SID>StripTrailingWhitespaces()
