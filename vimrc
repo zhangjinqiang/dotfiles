@@ -4,11 +4,12 @@ set guicursor=
 set nowrap
 set hlsearch
 set noerrorbells
-set nu
+set number
 set relativenumber
 set cursorline
 set tabstop=2 softtabstop=2
-set shiftwidth=4
+set shiftround
+set shiftwidth=2
 set expandtab
 set autoindent
 set smartindent
@@ -22,6 +23,8 @@ set scrolloff=8
 set noshowmode
 set signcolumn=yes
 set colorcolumn=80
+set showmatch
+set matchtime=7
 set pastetoggle=<F3>
 
 " Give more space for displaying messages
@@ -69,10 +72,22 @@ call plug#end()
 " command! -nargs=0 ng NERDTree
 colorscheme gruvbox
 
+"===================================================
 " From learn vimscript the hard way
 nnoremap <space> za
 autocmd VimEnter * echo "<^.^>"
+
+" move current line downwards
+nmap - ddp
+" move current line upwards
+nmap _ kddpk
+
+" make current word upcase
+imap <c-u> <esc>viwUea
+nmap <c-u> g~iw
+
 " Above is from learn vimscript the hard way
+"===================================================
 
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 function! <SID>StripTrailingWhitespaces()
