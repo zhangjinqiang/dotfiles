@@ -85,6 +85,9 @@ nnoremap <leader>^ kddpk
 inoremap <c-u> <esc>viwUea
 nmap <c-u> g~iw
 
+nnoremap <leader>ev :vsplit ~/dotfiles/vimrc
+nnoremap <leader>sv :source ~/dotfiles/vimrc
+
 " Above is from learn vimscript the hard way
 "===================================================
 
