@@ -74,13 +74,12 @@ colorscheme gruvbox
 
 "===================================================
 " From learn vimscript the hard way
-nnoremap <space> za
 autocmd VimEnter * echo "<^.^>"
 
 " move current line downwards
-nnoremap V ddp
+nnoremap <leader>V ddp
 " move current line upwards
-nnoremap ^ kddpk
+nnoremap <leader>^ kddpk
 
 " make current word upcase
 inoremap <c-u> <esc>viwUea
