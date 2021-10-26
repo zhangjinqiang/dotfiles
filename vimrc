@@ -52,7 +52,7 @@ endif
 " mappings
 let mapleader = "\<Space>"
 
-nmap <leader>l :set list!<CR>
+nnoremap <leader>l :set list!<CR>
 
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
@@ -78,12 +78,12 @@ nnoremap <space> za
 autocmd VimEnter * echo "<^.^>"
 
 " move current line downwards
-nmap - ddp
+nnoremap V ddp
 " move current line upwards
-nmap _ kddpk
+nnoremap ^ kddpk
 
 " make current word upcase
-imap <c-u> <esc>viwUea
+inoremap <c-u> <esc>viwUea
 nmap <c-u> g~iw
 
 " Above is from learn vimscript the hard way
